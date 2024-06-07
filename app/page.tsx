@@ -118,7 +118,7 @@ const HomePage: React.FC = () => {
 
   if (!isLoggedIn) {
     return (
-      <Container>
+      <Container style={{ maxWidth: '736px' }}>
         <CategorySelector
           selectedCategory={selectedCategory}
           selectedCategoryNames={selectedCategoryNames}
