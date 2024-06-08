@@ -18,7 +18,7 @@ const CustomBreadcrumb: React.FC<BreadcrumbProps> = ({ selectedCategoryNames, on
         color="inherit"
         onClick={() => onCategoryChange('major', '', '')}
       >
-        {selectedCategoryNames.major || '카테고리 선택'}
+        {selectedCategoryNames.major || '카테고리'}
       </Link>
       {selectedCategoryNames.major && (
         <Link

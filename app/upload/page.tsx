@@ -98,9 +98,9 @@ const UploadPage: React.FC = () => {
         <Grid item xs={12} md={6}>
           <Card>
             <CardContent>
-              <Typography variant="h4" gutterBottom>Upload New Step</Typography>
+              <Typography variant="h4" gutterBottom>새로운 froCAPTCHA 업로드하기</Typography>
               <TextField
-                label="Title"
+                label="제목"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 fullWidth
@@ -113,7 +113,7 @@ const UploadPage: React.FC = () => {
                 allowAddNew={true}
               />
               <TextField
-                label="Rows"
+                label="세로"
                 type="number"
                 value={rows}
                 onChange={(e) => setRows(parseInt(e.target.value))}
@@ -121,7 +121,7 @@ const UploadPage: React.FC = () => {
                 style={{ marginBottom: '16px' }}
               />
               <TextField
-                label="Cols"
+                label="가로"
                 type="number"
                 value={cols}
                 onChange={(e) => setCols(parseInt(e.target.value))}
@@ -134,7 +134,7 @@ const UploadPage: React.FC = () => {
                 style={{ display: 'block', marginBottom: '16px' }}
               />
               <TextField
-                label="Answers"
+                label="정답"
                 value={answers.join(', ')}
                 fullWidth
                 style={{ marginBottom: '16px' }}
@@ -149,7 +149,7 @@ const UploadPage: React.FC = () => {
                 fullWidth
                 disabled={!selectedCategory.minor}
               >
-                Upload
+                업로드
               </Button>
             </CardContent>
           </Card>

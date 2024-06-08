@@ -20,7 +20,10 @@ const RecaptchaPreviewCard: React.FC<RecaptchaPreviewCardProps> = ({ title, imag
                     {title || '제목'}
                 </Typography>
                 <Typography variant="body2" color="textSecondary" gutterBottom>
-                    이 있는 타일을 모두 선택하세요. 아무것도 없으면 건너뛰기를 클릭하세요.
+                    이 있는 타일을 모두 선택하세요.
+                </Typography>
+                <Typography variant="body2" color="textSecondary" gutterBottom>
+                    아무것도 없으면 건너뛰기를 클릭하세요.
                 </Typography>
                 {imageURL ? (
                     <ImageGrid
