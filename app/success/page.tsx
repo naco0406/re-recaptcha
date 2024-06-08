@@ -12,8 +12,11 @@ const SuccessPageContent: React.FC = () => {
   return (
     <>
       <Typography variant="h4">성공!</Typography>
+      {/* <Typography variant="body1" style={{ marginTop: '16px' }}>
+        인증되었습니다 - {name}
+      </Typography> */}
       <Typography variant="body1" style={{ marginTop: '16px' }}>
-        당신은 {name}이 맞습니다.
+        인증되었습니다
       </Typography>
     </>
   );
